@@ -1,0 +1,149 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "SF Pro Display", sans-serif;
+  font-size:16px;
+  color:#444;
+
+}
+
+.navigation{
+  background: rgba(45,45,45,0.98);
+  max-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+.navigation ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+  color: white;
+}
+
+.navigation ul li{
+  padding: 0px 50px 0px 50px
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.navigation h1{
+    font-size: 25px;
+    color: white;
+    transition: 1s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5eafdc), to(#bf74c9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.navigation img{
+    height: 50px;
+    width: 50px;
+    margin-right: 0px;
+} 
+
+
+/* FIN Du Header */
+
+footer{
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+  /* 1menu submenu */
+.footer_info {
+  width: 50%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+.footer_info  li {
+  display: inline;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px 10px 2px 10px;
+
+}
+.footer_info  li li{
+  display: block;
+}
+.footer_info img{
+  height: 50px;
+  width: 50px;
+  margin-left: 45px;
+}
+.footer_info ul{
+  display: flex;
+  justify-content: center;
+}
+.footer_info ul ul{
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer_info ul li li:first-child{
+  font-weight: bold;
+  font-size: 19px;
+}
+.footer_info a{
+  text-decoration: none;
+  color: blue;
+}
+/* fin 1menue submenue */
+
+.informations{
+  height: 40px;
+  border-bottom: solid 1px;
+  font-size: 12px;
+}
+
+/* 2menu submenu */
+
+
+.information_Part2 {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+.information_Part2  li {
+  list-style: none;
+  width: 200px;
+  padding-top: 25px;
+  font-size: 16px;
+  
+
+
+}
+.information_Part2  li li{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.information_Part2 ul{
+  display: flex;
+  padding: 0px;
+}
+.information_Part2 ul ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.information_Part2 a{
+  text-decoration: none;
+  color: grey;
+}
