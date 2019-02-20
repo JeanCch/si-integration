@@ -1,0 +1,98 @@
+main{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+
+.Caractéristiques_simple{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 1300px;
+
+}
+
+.Caractéristiques_simple ul li {
+    list-style: none;
+    font-family: "SF Pro Display Light", sans-serif;
+    max-width: 500px;
+}
+
+.h3_photo_HomePod{
+  margin-left: 25px;
+}
+.Barre_achat{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  border-bottom: 1px solid black;
+}
+
+.Button_acheter{
+display: block;
+width: 120px;
+height: 32px;
+text-align: center;
+vertical-align: middle;
+background: rgba(45,45,45,0.98);
+border: white;
+}
+
+.Button_acheter a {
+  color: white;
+  text-decoration: none;
+  font-family: "SF Pro Display Light", sans-serif;
+}
+
+
+.titre_2{
+  margin-left: 30px;
+  font-size: 300%;
+}
+
+.Caractéristiques_tech{
+  padding-top: 50px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+
+.Caractéristiques_tech ul li {
+  list-style: none;
+  line-height: 25px;
+}
+
+.Caractéristiques_tech ul{
+  padding-top: 25px;
+}
+
+.ul_photo_HomePod{
+  height: 430px;
+  width: 350px;
+  margin-left: 20px;
+}
+
+video{
+  height: 600px;
+  width: 1000px;
+}
+
+div>h2{
+  font-size: 200%;
+}
+
+.img_video{
+  text-align: center;
+  width: 85%;
+}
+
+.video_div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
