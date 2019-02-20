@@ -1,0 +1,109 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "SF Pro Display", sans-serif;
+  font-size:16px;
+  color:#444;
+}
+
+.navigation{
+  background: rgba(45,45,45,0.98);
+  max-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+.navigation ul{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  align-items: center;
+  color: white;
+}
+
+.navigation ul li{
+  padding: 0px 50px 0px 50px
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.navigation h1{
+    font-size: 25px;
+    color: white;
+    transition: 1s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5e8fdc), to(#bf74c9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.navigation img{
+    height: 50px;
+    width: 50px;
+    margin-right: 0px;
+} 
+
+
+/* FIN Du Header */
+
+footer{
+  background-color: #f2f2f2;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.informations{
+  height: 40px;
+  border-bottom: solid 1px;
+}
+/* debut des menues sous menues */
+
+
+
+.informations_Part2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.informations_Part2 ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align:center; 
+  font-size: 16px;
+}
+
+.informations_Part2 ul ul{
+  position:absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+}
+
+.informations_Part2 li{
+  display: inline-block;
+  position: relative;
+}
+
+.informations_Part2 li li a{
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.informations_Part2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color: black;
+}
+
