@@ -1,0 +1,704 @@
+main{
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+
+.Caractéristiques_simple{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 1300px;
+
+}
+
+.Caractéristiques_simple ul li {
+    list-style: none;
+    font-family: "SF Pro Display Light", sans-serif;
+    max-width: 500px;
+}
+
+.h3_photo_HomePod{
+  margin-left: 25px;
+
+}
+.Barre_achat{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  border-bottom: 1px solid black;
+}
+
+.Button_acheter{
+display: block;
+width: 120px;
+height: 32px;
+text-align: center;
+vertical-align: middle;
+background: linear-gradient(#42a1ec, #0070c9);
+border: white;
+border-radius: 4px;
+}
+.Button_acheter:hover{
+  background: linear-gradient(#0070c9, #42a1ec);
+}
+
+.Button_acheter a {
+  color: white;
+  text-decoration: none;
+  font-family: "SF Pro Display Light", sans-serif;
+}
+
+.Afficher_more a{
+  margin-left: 40px;
+}
+
+.titre_2{
+  margin-left: 30px;
+  font-size: 300%;
+}
+
+.Caractéristiques_tech{
+  padding-top: 50px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+
+.Caractéristiques_tech ul li {
+  list-style: none;
+  line-height: 25px;
+}
+
+.Caractéristiques_tech ul{
+  padding-top: 25px;
+}
+
+.ul_photo_HomePod{
+  height: 430px;
+  width: 350px;
+  margin-left: 20px;
+}
+
+video{
+  height: 600px;
+  width: 1000px;
+}
+
+div>h2{
+  font-size: 200%;
+}
+
+.img_video{
+  text-align: center;
+  width: 85%;
+}
+
+.video_div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#toggle{
+  height:auto;
+  margin:1em;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+ }
+
+#toggle p {
+  text-align:center;
+  padding:0
+}
+
+#toggle ul li {
+  list-style: none;
+}
+
+.toggle_p_1{
+width: 300px;
+line-height: 150%;
+}
+
+.toggle_p_2{
+width: 300px;
+line-height: 150%;
+}
+
+.toggle_p_3{
+  line-height: 120%;
+}
+
+.button_affichez{
+
+}
+
+.button_affichez a{
+
+}
+
+/*Responsive caractéristiques*/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+  }
+  .h3_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .ul_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1023px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  .h3_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .ul_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+}
+@media all and (min-width: 550px) and (max-width: 799px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .ul_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .navigation{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(45,45,45,0.98);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+@media all and (min-width: 250px) and (max-width: 549px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .ul_photo_HomePod{
+    height: 100%;
+    width: 100%;
+
+  }
+/*CECI EST LE MENU HAMBURGER POUR LE RESPONSIVE*/
+  .navigation{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(45,45,45,0.98);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+}
+
+@media all and (min-width: 0px) and (max-width: 249px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 100%;
+    width: 100%;
+  }
+  .ul_photo_HomePod{
+    height: 100%;
+    width: 100%;
+
+  }
+/*CECI EST LE MENU HAMBURGER POUR LE RESPONSIVE*/
+  .navigation{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: black;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
