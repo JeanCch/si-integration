@@ -258,8 +258,8 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 
-#music_part p:nth-child(3){
-  width: 500px;
+#music_part span:nth-child(3){
+  /* width: 500px; */
   margin: 0 auto;
   font-size: 18px;
   font-weight: normal;
@@ -268,8 +268,8 @@ h1{
   color: #111;
 }
 
-#music_part p:nth-child(4){
-  width: 500px;
+#music_part span:nth-child(4){
+  /* width: 500px; */
   margin: 0 auto;
   font-size: 12px;
   font-weight: lighter;
