@@ -31,12 +31,18 @@ body{
   text-decoration: none;
   color: white;
   transition: 1s;
+  font-family: "SF Pro Display Light", sans-serif;
 }
+
+.navigation a:hover{
+  color: grey;
+}
+
 .navigation h1{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     transition: 1s;
-    background: -webkit-gradient(linear, left top, left bottom, from(#5eafdc), to(#bf74c9));
+    background:white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -47,15 +53,21 @@ body{
     margin-right: 0px;
 }
 
+#menu_hidden{   /*Classe indispensable pour le menu responsive*/
+  visibility: hidden;
+  height: 1%;
+  width: 1%;
+}
 
 /* FIN Du Header */
 
 footer{
-  height: 500px;
+  height: 650px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #f2f2f2;
 }
   /* 1menu submenu */
 .footer_info {
@@ -66,7 +78,9 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top : 60px;
 }
+
 .footer_info  li {
   display: inline;
   text-align: center;
