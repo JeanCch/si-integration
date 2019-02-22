@@ -5,9 +5,12 @@ body
   padding:0;
   font-family: "SF Pro Display", sans-serif;
   font-size:16px;
+  background-color: white;
+}
+.background_color
+{
   background-color: black;
 }
-
 .navigation
 {
   background: rgba(45,45,45,0.98);
@@ -56,50 +59,66 @@ padding: 0px 50px 0px 50px}
 }
 
 /* FIN Du Header */
-
 /* Main */
-
-.scroll_Text1, .scroll_Text1_1, .scroll_Text2 {
+.scroll_Text1, .scroll_Text1_1, .scroll_Text2, .scroll_Text3, .scroll_Text4
+{
   transition: opacity 0.5s  ease-in;
   opacity:  1;
   display: none;
 }
-.slide_1{
+
+.slide_1
+{
   width: 100%;
   height: 1000px;
   margin: 0 auto;
   background-color: white;
   margin-bottom: 8px;
 }
-.slide_2{
+
+.slide_2
+{
   width: 100%;
   height: 1000px;
   margin: 0 auto;
   background-color: white;
   margin-bottom: 8px;
 }
-.slide_3{
+
+.slide_3
+{
   width: 100%;
-  height: 1000px;
+  height: 1400px;
   margin: 0 auto;
   background-color: white;
   margin-bottom: 8px;
 }
-.opacityHidden {
+.slide_4
+{
+  width: 100%;
+  height: 1400px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+.opacityHidden
+{
   opacity:  0;
-  color: black;
 }
-.opacityHidden .slide_1 a{
-  color: red;
-}
-.slide_1 h1{
+
+.slide_1 h1
+{
   font-size: 60px;
 }
- h2{
+
+h2
+{
   font-size: 50px;
 }
 
-.scroll_Text1{
+.scroll_Text1
+{
   width: 40%;
   height: 150px;
   margin: 0 auto;
@@ -109,16 +128,9 @@ padding: 0px 50px 0px 50px}
   font-size: 25px;
   padding-top: 50px;
 }
-.scroll_Text2{
-  width: 450px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  padding-top: 50px;
-}
-.scroll_Text3{
+
+.scroll_Text2
+{
   width: 450px;
   margin: 0 auto;
   text-align: center;
@@ -128,38 +140,65 @@ padding: 0px 50px 0px 50px}
   padding-top: 50px;
 }
 
+.scroll_Text3
+{
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 50px;
+}
 
-.scroll_video{
+.scroll_Text4
+{
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.scroll_video
+{
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-
 }
-.slide_1_info{
+
+.slide_1_info
+{
   width: 50%;
   height: 30%;
   margin:0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.slide_1_info ul{
+
+.slide_1_info ul
+{
   padding: 0px;
-
 }
-.slide_1_info li{
+
+.slide_1_info li
+{
   display: inline;
   margin: 0px 50px 0px 50px;
-
 }
-.slide_1_info a{
+
+.slide_1_info a
+{
   text-decoration: none;
   font-size: 25px;
-
 }
-.desc_title{
+
+.desc_title
+{
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -167,60 +206,106 @@ padding: 0px 50px 0px 50px}
   padding-top: 20px;
 }
 
-.slide_2_align{
+.slide_2_align
+{
   display: flex;
   justify-content: space-around;
 }
-.slide_2_img{
+
+.slide_2_img
+{
   width: 40%;
   text-align: center;
 }
-.slide_2_img img{
+
+.slide_2_img img
+{
   width: 600px;
   height: 600px;
 }
-.slide_2_text{
+
+.slide_2_text
+{
   text-align: center;
   width: 35%;
   display: flex;
   align-items: center;
   padding-right: 150px;
 }
-.slide_2_text p{
+
+.slide_2_text p
+{
   font-size: 30px;
 }
 
-
-
-.slide_3_align{
+.slide_3_align
+{
   display: flex;
-  flex-wrap: wrap;
-  background-color: brown;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
 }
-.slide_3_img{
+
+.slide_3_img
+{
   width: 100%;
-  background-color: blue;
+  margin: 0 auto;
   display: flex;
-  
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.slide_3_img img
+{
+  width: 615px;
+  height: 500px;
+  padding-left: 200px;
+}
+
+.slide_3_text
+{
+  text-align: center;
+  width: 50%;
+  display: flex;
   align-items: center;
+  margin-top: 100px;
 }
-.slide_3_img img{
-  width: 600px;
-  height: 352px;
+
+.slide_3_text p
+{
+  font-size: 30px;
 }
-.slide_3_text{
+
+.slide_4_sliders
+{
+  width: 800px;
+  height: 600px;
+  border: solid 1px ;
+
+}
+
+.slide_4_align
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.slide_4_text
+{
   text-align: center;
   width: 35%;
   display: flex;
   align-items: center;
-  
-  background-color: red;
+  padding-right: 150px;
 }
-.slide_3_text p{
+
+.slide_4_text p
+{
   font-size: 30px;
 }
+
 /* 1menu submenu */
 footer
 {
@@ -310,7 +395,7 @@ footer
   text-align: center;
 }
 
-.information_Part2  li
+.information_Part2 li
 {
   list-style: none;
   width: 200px;
@@ -374,23 +459,53 @@ footer
     width: 50px;
     margin-left: 0px;
   }
+
   .informations
   {
     width: 400px;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
     padding-top: 100px;
   }
 
+  /* RESPONSIVE DU BODY /*/
+  .slide_2_text
+  {
+    width: 700px;
+    background-color: rgba(255,255,255,0.7);
+    padding-right: 0px;
+    border-radius: 50px 50px 50px 50px;
+  }
+
+  .slide_1 h1
+  {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    font-size: 35px;
+  }
+
+  /* RESPONSIVE DU BODY /*/
 }
 
-@media screen and (min-width: 0px) and (max-width: 800px)
+@media screen and (min-width: 0px) and (max-width: 830px)
 {
+  footer
+  {
+    height: 2200px;
+  }
+
+  .footer_info
+  {
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
+  }
+
   .information_Part2
   {
     width: 100%;
     height: 500px;
     text-align: center;
-    padding: 300px 0px 0px 0px;
+    padding: 0px 0px px 0px;
   }
 
   .information_Part2  li
@@ -414,14 +529,49 @@ footer
     text-align: center;
     font-size: 12px;
     border: solid 0px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    width: 400px;
+  }
+
+  /* RESPONSIVE DU BODY /*/
+  .slide_1
+  {
+    width: 100%;
+    height:1000px;
+  }
+
+  .slide_1 h1
+  {
+    padding-top: 160px;
+    padding-bottom: 150px;
+    font-size: 35px;
+  }
+
+  video
+  {
+    width: 300px;
+  }
+
+  .slide_1_info
+  {
+    text-align: center;
+  }
+
+  .slide_3_text
+  {
+    width: 100%;
+    height: 120px;
   }
 }
 
+/* RESPONSIVE DU BODY /*/
 @media screen and (min-width: 0px) and (max-width: 600px)
 {
   .informations
   {
-    padding-top: 100px;
+    padding-top: 400px;
+    padding-bottom: 300px;
     width: 200px;
   }
 
@@ -439,4 +589,26 @@ footer
   {
     margin-top: 400px;
   }
+
+  /* RESPONSIVE DU BODY */
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px)
+{
+  /* RESPONSIVE DU BODY */
+  .slide_1_info
+  {
+    text-align: center;
+    width: 150px;
+    margin: 0px;
+    display: inline;
+  }
+
+  /* RESPONSIVE DU BODY */
+  .informations
+  {
+    padding-top: 0px;
+    background-color: red;
+  }
+
 }

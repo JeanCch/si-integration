@@ -31,20 +31,6 @@ window.addEventListener('scroll', function(e) {
 
 
 
-window.addEventListener('scroll', function(e) {
-	
-	if(window.scrollY > 700){
-		$('.slide_1_info a').addClass('visibility');
-		//$('.scroll_Text1').css('opacity',1).animate({opacity:0}, 1000);
-	}
-	if(window.scrollY < 700){
-		$('.slide_1_info a').removeClass('visibility');
-	}
-
-	lastScroll = window.scrollY;
-}) 
-
-
 
 let lastScroll2 = 100;
 
@@ -60,4 +46,32 @@ window.addEventListener('scroll', function(e) {
 
 	lastScroll2 = window.scrollY;
 
+})
+
+window.addEventListener('scroll', function(e) {
+	
+	if(window.scrollY > 2050){
+
+		$('.scroll_Text3').addClass('opacityHidden');
+		//$('.scroll_Text1').css('opacity',1).animate({opacity:0}, 1000);
+	}
+	if(window.scrollY < 2050){
+		$('.scroll_Text3').removeClass('opacityHidden');
+	}
+
+	lastScroll = window.scrollY;
+}) 
+
+window.addEventListener('scroll', function(e) {
+	
+	if(window.scrollY > 3500){
+
+		$('.scroll_Text4').addClass('opacityHidden');
+		//$('.scroll_Text1').css('opacity',1).animate({opacity:0}, 1000);
+	}
+	if(window.scrollY < 3500){
+		$('.scroll_Text4').removeClass('opacityHidden');
+	}
+
+	lastScroll = window.scrollY;
 })
