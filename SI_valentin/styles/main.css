@@ -24,6 +24,7 @@ h1, h2, h3, h4, p, ul {
 }
 
 /* Useful selectors */
+/* Ces selecteurs concernent les widths globales et les display en flex parce qu'on est moderne */
 
 .container{
   width: 960px;
@@ -47,37 +48,10 @@ h1, h2, h3, h4, p, ul {
   justify-content: space-between;
 }
 
-.container__flex__colomn{
-  display: flex;
-  flex-flow: column wrap;
-}
-
 /* Header */
+/* Mettre le css en dessous du commentaire "Header" en supprimant celui-ci par la suite */
 
-header{
-  background: #333;
-}
 
-ul{
-  justify-content: space-between;
-  /* align-items: flex-start; */
-}
-
-nav li{
-  padding: 10px;
-}
-
-nav li a{
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: normal;
-}
-
-#logo_apple{
-  width: 16px;
-  height: 19px;
-}
 
 /* Main */
 
@@ -88,6 +62,8 @@ h1{
   text-align: center;
   color: #111;
 }
+
+/* section n°1 */
 
 .picture_description{
   width: 500px;
@@ -248,6 +224,8 @@ h1{
   color: #0070C9;
 }
 
+/* section n°2 */
+
 #music_part{
   background: #FFF;
   padding-bottom: 20px;
@@ -272,8 +250,6 @@ h1{
 }
 
 #music_part span:nth-child(3){
-  /* width: 500px; */
-  margin: 0 auto;
   font-size: 18px;
   font-weight: normal;
   text-align: center;
@@ -282,8 +258,6 @@ h1{
 }
 
 #music_part span:nth-child(4){
-  /* width: 500px; */
-  margin: 0 auto;
   font-size: 12px;
   font-weight: lighter;
   text-align: center;
@@ -297,20 +271,7 @@ h1{
 }
 
 /* Footer */
-
-div[class*="part"]{
-  margin: 10px;
-  padding: 5px 10px;
-}
-
-h3{
-  font-weight: bolder;
-  font-size: 14px;
-}
-
-footer ul li a{
-  font-size: 12px;
-}
+/* mettre le css du footer en dessous du commentaire */
 
 
 /* Responsive */
@@ -318,20 +279,35 @@ footer ul li a{
 @media screen and (min-width:768px) and (max-width:1024px)
 {
   .container{
-    width: calc(100%/2 - 20px);
+    width: calc(100% - 20px);
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px)
 {
   .container{
-    width: calc(100%/2 - 20px);
+    width: calc(100% - 20px);
   }
 }
 
 @media screen and (min-width: 360px) and (max-width: 480px)
 {
   .container{
-    width: calc(100% / 2 - 40px);
+    width: calc(100% - 20px);
+  }
+  .picture_description{
+    width: calc(100% - 20px);
+  }
+  #picture_modifier{
+    width: calc(100% - 20px);
+  }
+  .white_color_box{
+    margin-bottom: 20px;
+  }
+  .picture_description_buy{
+    width: 100%;
+  }
+  .picture_description_info_retrait{
+    margin-bottom: 20px;
   }
 }
