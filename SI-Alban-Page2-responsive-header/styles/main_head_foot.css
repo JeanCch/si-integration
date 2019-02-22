@@ -98,27 +98,30 @@ width: 18%;
 
 /* FIN Du Header */
 
-footer{
-  height: 650px;
+/* 1menu submenu */
+footer
+{
+  height: 1000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: white;
 }
-  /* 1menu submenu */
-.footer_info {
+
+.footer_info
+{
   width: 50%;
   height: 260px;
-  text-align: center;
-  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top : 60px;
+  text-align: center;
+  font-size: 14px;
 }
 
-.footer_info  li {
+.footer_info  li
+{
   display: inline;
   text-align: center;
   width: 90%;
@@ -126,46 +129,55 @@ footer{
   padding: 8px 10px 2px 10px;
 }
 
-.footer_info  li li{
+.footer_info  li li
+{
   display: block;
 }
 
-.footer_info img{
+.footer_info img
+{
   height: 50px;
   width: 50px;
-  margin-left: 45px;
+  margin-left: 50px;
 }
 
-.footer_info ul{
+.footer_info ul
+{
   display: flex;
   justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
-.footer_info ul ul{
+.footer_info ul ul
+{
   display: flex;
   flex-direction: column;
 }
 
-.footer_info ul li li:first-child{
+.footer_info ul li li:first-child
+{
   font-weight: bold;
   font-size: 19px;
 }
-.footer_info a{
+
+.footer_info a
+{
   text-decoration: none;
   color: blue;
 }
-/* fin 1menue submenue */
 
-.informations{
+/* fin 1menue submenue */
+.informations
+{
   height: 40px;
   border-bottom: solid 1px;
   font-size: 12px;
 }
 
 /* 2menu submenu */
-
-
-.information_Part2 {
+.information_Part2
+{
   width: 50%;
   height: 300px;
   display: flex;
@@ -173,33 +185,196 @@ footer{
   align-items: center;
   font-size: 12px;
   text-align: center;
+  
 }
-.information_Part2  li {
+
+.information_Part2 li
+{
   list-style: none;
   width: 200px;
   padding-top: 25px;
   font-size: 16px;
-
-
 }
-.information_Part2  li li{
+
+.information_Part2  li li
+{
   display: block;
   text-align: center;
   font-size: 14px;
 }
-.information_Part2 ul{
+
+.information_Part2 ul
+{
   display: flex;
   padding: 0px;
 }
-.information_Part2 ul ul{
+
+.information_Part2 ul ul
+{
   display: flex;
   flex-direction: column;
 }
 
-.information_Part2 a{
+.information_Part2 a
+{
   text-decoration: none;
   color: grey;
 }
+
+/* responsive /!\ */
+@media screen and (min-width: 0px) and (max-width: 1460px)
+{
+
+
+  footer
+  {
+    padding-top: 150px;
+  }
+  .footer_info
+  {
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 400px 0px 250px 0px;
+  }
+
+  .footer_info ul
+  {
+    display: block;
+    padding: 0;
+  }
+
+  .footer_info li
+  {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .footer_info img
+  {
+    height: 50px;
+    width: 50px;
+    margin-left: 0px;
+  }
+
+  .informations
+  {
+    width: 400px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    border: solid 0px;
+  }
+
+
+@media screen and (min-width: 0px) and (max-width: 830px)
+{
+  footer
+  {
+    height: 2200px;
+
+  }
+
+  .footer_info
+  {
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .information_Part2
+  {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 0px 0px px 0px;
+  }
+
+  .information_Part2  li
+  {
+    list-style: none;
+    width: 300px;
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+  .information_Part2 ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  .informations
+  {
+    text-align: center;
+    font-size: 12px;
+    border: solid 0px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px)
+{
+  .informations
+  {
+    padding-top: 400px;
+    padding-bottom: 300px;
+    width: 200px;
+  }
+
+  .information_Part2
+  {
+    margin-top: 240px;
+  }
+
+  .information_Part2 ul
+  {
+    padding-bottom: 30px;
+  }
+
+  .footer_info
+  {
+    margin-top: 400px;
+  }
+
+  /* RESPONSIVE DU BODY */
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px)
+{
+  .informations
+  {
+    padding-top: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #menu_hidden{   /*Classe indispensable pour le menu responsive*/
   visibility: hidden;
